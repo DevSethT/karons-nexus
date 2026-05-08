@@ -1,0 +1,25 @@
+.clock__container {
+  border: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 65%;
+  margin: 10px;
+}
+
+.clock__date {
+}
+
+.clock__day {
+  font-size: 40px;
+  color: orangered;
+}
+
+.clock__text {
+  margin: 0;
+}
+
+.clock__time {
+  margin: 5px;
+  font-size: 70px;
+}
