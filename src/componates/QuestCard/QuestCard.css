@@ -1,0 +1,42 @@
+.questcard {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.questcard__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questcard__name {
+}
+
+.questcard__dificulty {
+  align-self: center;
+}
+
+.questcard__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questcard__description {
+  min-height: 30px;
+}
+
+.questcard__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  align-self: center;
+}
+
+.questcard__completed {
+  opacity: 0;
+}
+
+.questcard__completed .questcard__name {
+  text-decoration: line-through;
+}

@@ -1,0 +1,7 @@
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar__link {
+}
