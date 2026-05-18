@@ -6,6 +6,8 @@ import { useState } from "react";
 function QuestPage() {
   const [quests, setQuests] = useState(startingQuests);
 
+  const uncompletedQuests = quests.filter((quest) => !quest.completed);
+
   function toggleQuest(id) {
     setQuests(
       quests.map((quest) =>

@@ -1,0 +1,17 @@
+.home__page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: center;
+}
+
+.home__clock {
+}
+
+.home__questboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
+}

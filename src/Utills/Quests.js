@@ -3,7 +3,7 @@ export const quests = [
     id: 1,
     name: "Coder",
     description: "Code for 25 minutes",
-    dificulty: "average",
+    dificulty: "medium",
     completed: false,
   },
   {

@@ -4,7 +4,7 @@
   flex-direction: column;
   text-align: center;
   width: 65%;
-  margin: 10px;
+  margin: auto;
 }
 
 .clock__date {
