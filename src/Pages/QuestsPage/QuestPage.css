@@ -1,3 +1,24 @@
+.questpage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.questpage__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questpage__add-quest {
+
+}
+
+
 .questboard {
   margin: auto;
   display: flex;
