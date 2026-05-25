@@ -5,7 +5,7 @@ function QuestCard({ quest, toggleQuest }) {
     <div className="questcard">
       <div className="questcard__header">
         <h3 className="questcard__name">{quest.name}</h3>
-        <p className="questcard__dificulty">{quest.dificulty}</p>
+        <p className="questcard__dificulty">{quest.difficulty}</p>
       </div>
       <div className="questcard__info">
         <p className="questcard__description">{quest.description}</p>

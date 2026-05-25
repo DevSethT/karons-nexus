@@ -1,12 +1,22 @@
 import "./QuestPage.css";
 import { quests as startingQuests } from "../../Utills/Quests";
 import QuestCard from "../../componates/QuestCard/QeustCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddQuestModal from "../../componates/AddQuestModal/AddQuestModal";
 
 function QuestPage() {
-  const [quests, setQuests] = useState(startingQuests);
+  const [quests, setQuests] = useState(() => {
+    const savedQuests = JSON.parse(localStorage.getItem("quests"));
+    return savedQuests || startingQuests;
+  });
+
   const [isOpen, setOpen] = useState(false);
+
+
+  useEffect(() => {
+    localStorage.setItem("quests", JSON.stringify(quests));
+  }, [quests]);
+
 
   // const uncompletedQuests = quests.filter((quest) => !quest.completed);
 
@@ -25,6 +35,13 @@ function QuestPage() {
       ),
     );
   }
+
+  function addQuest(newQuest) {
+    setQuests([...quests, newQuest]);
+  }
+
+
+
   return (
     <div className="questpage">
       <div className="questpage__header">
@@ -37,7 +54,7 @@ function QuestPage() {
         ))}
       </div>
       {isOpen && (
-        <AddQuestModal closeModal={closeModal} />
+        <AddQuestModal closeModal={closeModal} addQuest={addQuest} />
       )}
     </div>
   );
